@@ -1,0 +1,67 @@
+<html>
+<script>
+function myNumber()
+{
+	return "hi";
+}
+
+
+var mammal =
+{
+	legs: 'four',
+	blood: 'warm'
+};	
+
+var reptile =
+{
+	kind: 'scaled',
+	blood: 'cold'
+};	
+var test = {};
+
+var snake = Object.create(reptile);
+
+snake.tongue = 'forked';
+snake.poison = 'lethal';
+
+// for (var i in snake)
+// {
+// 	if(snake.hasOwnProperty(i))
+// 	{
+// 		document.write(i + "\n")
+// 	}
+// }
+
+var mySnakePrototype = Object.getPrototypeOf(snake);
+document.write(test);
+
+// document.write(snake.poison);
+
+// for (var k in reptile)
+// {
+// 	document.write(reptile[k]);
+// }
+
+// document.write(mammal.blood + "\n");
+// document.write(reptile.blood);
+
+// var person = {
+
+// 	kind: 
+// }
+
+// var zack = {}
+// zack.__proto__ = person
+
+// // zack doesn't respond to kind at this point
+// document.write(zack.kind + "\n\n"); //=> undefined
+
+// // let's add kind to person
+// person.kind = 'person'
+
+// // now zack responds to kind
+// // because it finds 'kind' in person
+// document.write(zack.kind); //=> 'person'
+	
+</script>
+</html>
